@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="App">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simulador de préstamo bancario</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+</head> 
+  
+ 
+<body background="imagenes/imagen calcular.png">
+
+    <div class="contenedor1 ">
+        <div class="row mt-3">
+            <div class="col-6">
+                <form action="Prestamo.html" method="get" onsubmit="return validacion();">
+                    <h5 class="formulario__titulo">Hecho por:</h5>
+                    <h5 class="formulario__titulo">James Alexander Mejía</h5><br>
+                    <h3 class="formulario__titulo">Simulador bancario renacer</h3>
+                    <br>
+                    <div class="form-group">
+                     <h6><label for="nombre">Nombre*</label></h6>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+
+                    <div class="form-group">
+                       <h6> <label for="direccion">Direccion*</label></h6>
+                        <input type="text" class="form-control" id="direccion" placeholder="Ingresa tu dirección">
+                    </div>
+
+                    <div class="form-group">
+                       <h6> <label for="email">Email*</label></h6>
+                        <input type="text" class="form-control" id="email" placeholder="Ingresa tu email">
+                    </div>
+
+                    <div class="form-group">
+                       <h6> <label for="telefono">Teléfono*</label></h6>
+                        <input type="text" class="form-control" id="telefono" placeholder="Ingresa tu teléfono">
+                    </div>
+
+                <input type="submit" class="btn btn-dark"  value="Enviar"> 
+                </form> 
+                </div>
+                </div>
+                </div>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<script src="js/javascript.js"></script>
+<script src="js/moment.js"></script>     
+</body>
+</html>

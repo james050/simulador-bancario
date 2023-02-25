@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-app="App">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simulador de préstamo bancario</title>
+</head> 
+
+ 
+<body background="imagenes/imagen calcular.png">
+  
+
+    <div  class="contenedor1">
+        <div class="row mt-3">
+            <div  class="col-6">
+                  <h3 class="formulario__titulo">Simulador bancario renacer </h3><br>
+                <div class="form-group">                  
+                   <h6> <label for="ingresos_mensuales">Ingresos mensuales*</label></h6>
+                     <input type="text" class="form-control" id="ingresos_mensuales" placeholder="Ingresos mensuales">
+                </div>
+                <div class="form-group">
+                     <h6><label for="otros_ingresos">Otros ingresos*</label></h6>
+                    <input type="text" class="form-control" id="otros_ingresos" placeholder="Otros ingresos">
+                </div>
+                <div class="form-group">
+                    <h6><label for="gastos">Gastos*</label></h6>
+                    <input type="text" class="form-control" id="gastos" placeholder="Ingresa tus gastos mensuales">
+                </div>
+                <div class="form-group">
+                   <h6> <label for="monto">Valor a solicitar*</label></h6>
+                    <input type="text" class="form-control" id="valor_solicitar" placeholder="Ingresa el valor a solicitar">
+                </div>
+                <div class="form-group">
+                   <h6> <label for="tiempo">Plazo de tiempo*</label></h6>
+                    <input type="text" class="form-control" id="plazo_tiempo" placeholder="Ingresa tiempo">
+                </div>
+                <div class="form-group">
+                    <h6><label for="interes">Destino del credito*</label></h6>
+                    <select name="" id="interes" class="form-control select2 select2-hidden-accesible">
+                        <option value="" disabled selected>Seleccione</option>
+                        <option value="0.8">Compra de cartera (0.8%)</option>
+                        <option value="1.8">Compra de vehiculo (1.8%)</option>
+                        <option value="1">Estudios universitarios (1%)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-dark" id="btnCalcular">Cálcular</button>
+                 <br><br>
+               </div>   
+            </div>
+           
+            </div> 
+
+            <div class="table-resumen" id="Registro">
+
+                <h3>Resumen crédito</h3>
+                <h6>- Ingresos mensuales: $</h6>
+                <h6>- Otros ingresos: $</h6>
+                <h6>- Gastos: $</h6>
+                <h6>- valor a solicitar: $</h6>
+                <h6>- Plazo tiempo (Meses):</h6>
+                
+            </div>
+            
+          
+
+             <div class="table-container">
+                <div class="table-rwd">
+                    <table id="lista-tabla" class="table" border="1">
+                        <thead>
+                            <tr bgcolor="#30312B"> 
+                                <th class="letra">Número de cuota</th>
+                                <th class="letra">Fecha de pago</th>
+                                <th class="letra">Cuota a pagar con interés</th>
+                                <th class="letra">Cuota a pagar con interés y seguro de vida ($12.000)</th>
+                                <th class="letra">Abono a capital</th>
+                                <th class="letra">Interés</th>
+                                <th class="letra">Saldo en capital</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                
+            </div>
+     
+   
+
+
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<script src="js/javascript.js"></script>
+<script src="js/moment.js"></script>     
+</body>
+</html>

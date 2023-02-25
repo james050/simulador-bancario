@@ -1,0 +1,44 @@
+.form-control:focus {
+  border-color: #30312B;
+  box-shadow: inset 0 1px 1px rgba(48,49,43), 0 0 8px rgba(48,49,43);
+}
+.contenedor1{
+    padding-right: 30px auto ;
+    padding-left:  350px ;
+  
+}
+.formulario__titulo{
+
+	text-align: center;
+	font-weight: bold;
+	font-family: "Times New Roman";
+}
+body{
+ font-family: "Times New Roman";
+}
+
+.table-container {
+  overflow-x: auto; 
+  text-align: center;
+  background: #DFDFCB;
+  margin-right: 8px;
+  margin-left: 8px;
+ 
+ }
+ .table-resumen {
+  overflow-x: auto; 
+  text-align: center;
+  background: #DFDFCB;
+  margin-right: 8px;
+  margin-left: 8px;
+ 
+ }
+
+h6, h3{
+	color: #bada55;
+	color: black;
+
+}
+.letra{
+	color: #ffffff;
+}
